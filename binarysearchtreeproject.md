@@ -10,6 +10,9 @@
 -             2               5       9
 -         0
 
+- ı splited 2 number from 5 these are 3 and 7 then 1 is lower than 3 so it has to be found on the left
+
+
 
 
 - Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
