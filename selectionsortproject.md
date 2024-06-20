@@ -7,7 +7,7 @@ Proje 1
 - 6 ile 27 yer değiştirir - |2-6-16-22-18-27| 
 - 18 ile 22 yer değiştiri - |2-6-16-18-22-27|
 
-2- Big-O gösterimin yapınız.
+## 2- Big-O gösterimin yapınız. ##
 
 - 1-n
 - 2-n-1
@@ -17,11 +17,11 @@ Proje 1
 
 - ans = 0(n^2)
 
-## Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız ##
+### Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız ###
 
 - 2- WORST CASE 
 
-### [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız. ###
+#### [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız. ####
 
 - swap 2 and 7 = |2-3-5-8-7-9-4-15-6|
 - swap 4 and 5 = |2-3-4-8-7-9-5-15-6|
