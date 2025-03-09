@@ -26,8 +26,7 @@ public class NotOrtalamasıJava101 {
 
             System.out.print("Biyoloji Notunuzu giriniz: ");
             biyolojiNot = input.nextInt();
-
-            input.close();  // Scanner'ı kapatıyoruz
+                
 
             int toplam = (matematikNot + fizikNot + kimyaNot + turkceNot + tarihNot + biyolojiNot);
             double sonuc = toplam / 6.0;
