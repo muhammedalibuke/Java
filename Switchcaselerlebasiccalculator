@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class switchcaselerlebasıccalculator {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int d, f ;
+
+        System.out.println("İlk Sayınızı giriniz : ");
+        d= input.nextInt();
+        System.out.println("İkinci Sayınızı giriniz: ");
+        f = input.nextInt();
+        System.out.println("1-Toplama\n2-Çarpma\n3-Bölme\n4-Çıkarma");
+        System.out.println("İşlem yapabilmek için 1-4 arasında bir sayı giriniz: " );
+        int deger = input.nextInt();
+
+        switch (deger) {
+            case 1:
+                System.out.println(f + d);
+                    break;
+
+            case 2:
+                System.out.println(f*d);
+                    break;
+
+            case 3:
+                System.out.println(f/d);
+                    break;
+
+            case 4:
+                System.out.println(f-d);
+                break;
+
+        }
+
+
+    }
+}
