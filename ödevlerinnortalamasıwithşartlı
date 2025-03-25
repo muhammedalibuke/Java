@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class ödevlinotortalaması {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int not1, not2, not3, not4, not5;
+        float ortalama;
+
+
+
+        System.out.println("Matematik dersinde aldığınız notu giriniz: ");
+        not1 = input.nextInt();
+
+        if (not1 > 100 && not1 < 0) {
+        not1 = 0 ;}
+
+
+        System.out.println("Türkçe dersinde aldığınız notu giriniz: ");
+        not2 = input.nextInt();
+
+        if (not2 > 100 && not2 < 0) {
+        not2 = 0 ;}
+
+
+        System.out.println("Fizik dersinde aldığınız notu giriniz: ");
+        not3 = input.nextInt();
+
+        if (not3 > 100 && not3 < 0){
+        not3 = 0 ;}
+
+
+        System.out.println("Biyoloji dersinde aldığınız notu giriniz: ");
+        not4 = input.nextInt();
+
+        if (not4 > 100 && not4 <0){
+        not4 = 0 ;}
+
+
+        System.out.println("Kimya dersinde aldığınız notu giriniz: ");
+        not5 = input.nextInt();
+
+        if (not5 > 100 && not5< 0){
+            not5 = 0 ;}
+
+
+        double average = (not1+not2+not3+not4+not5) / 5 ;
+        System.out.println("Girdiğiniz derslerin ortalaması : " + average);
+    }
+}
