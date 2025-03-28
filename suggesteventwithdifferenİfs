@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class suggesteventwithswitchcase {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int sicaklik;
+
+        System.out.println("Havanın Derecesine göre etkinlik önericisi : ");
+        sicaklik = input.nextInt();
+
+        if (sicaklik < 5){
+            System.out.println("Bu sıcaklıkta kayak yapmak çok güzel olur. ");
+        }
+        else if (sicaklik < 15 && sicaklik > 5)  {
+            System.out.println("Bu sıcaklıkta sinema izleyerek gününe zevk katabilirsin. ");
+        }
+        else if (sicaklik < 25 && sicaklik > 15 ) {
+            System.out.println("Bu sıcaklıkta piknik yaparak sevdiklerinle güzel bir anı bırakabilirsin. ");
+        }
+        else if (sicaklik > 25 ) {
+            System.out.println("Bu sıcaklıkta yüzmen hem senin ferahlamana hem de rahatlama vesile olur. ");
+        }
+
+    }
+}
