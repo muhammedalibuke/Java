@@ -1,0 +1,105 @@
+import java.util.Scanner;
+public class BurcBulanProgram {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int gun;
+        String ay;
+        String burc = "";
+
+
+        System.out.println("Doğdunuz ayı girinizi :  ");
+        ay = inp.nextLine();
+
+        System.out.println("Hangi günde doğdunuz :");
+        gun = inp.nextInt();
+
+        boolean isError = false;
+
+
+        if (ay.equals("Ocak")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Oğlak" : "Kova";
+            } else isError = true;
+
+        } else if (ay.equals("Şubat")) {
+            if (gun > 0 && gun <= 29) {
+                burc = (gun < 21) ? "Kova" : "Balık";
+            } else isError = true;
+
+        } else if (ay.equals("Mart")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Oğlak" : "Kova";
+            } else isError = true;
+
+        } else if (ay.equals("Nisan")) {
+            if (gun > 0 && gun <= 30) {
+                burc = (gun < 21) ? "Koç" : "Boğa";
+            } else isError = true;
+
+        } else if (ay.equals("Mayıs")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 23) ? "Boğa" : "İkizler";
+            } else isError = true;
+
+        } else if (ay.equals("Haziran")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 23) ? "İkizler" : "Yengeç";
+            } else isError = true;
+
+        } else if (ay.equals("Temmuz")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Yengeç" : "Aslan";
+            } else isError = true;
+
+        } else if (ay.equals("Ağustos")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Aslan" : "Başak";
+            } else isError = true;
+
+        } else if (ay.equals("Eylül")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Başak" : "Terazi";
+            } else isError = true;
+
+        } else if (ay.equals("Ekim")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Terazi" : "Akrep";
+            } else isError = true;
+
+        } else if (ay.equals("Kasım")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Akrep" : "Yay";
+            } else isError = true;
+
+        } else if (ay.equals("Aralık")) {
+            if (gun > 0 && gun <= 31) {
+                burc = (gun < 21) ? "Yay" : "Oğlak";
+            } else isError = true;
+        }
+
+            if (isError) {
+                System.out.println("Girdiğiniz veriler yanlıştır tekrar deneyiniz! ");
+
+                } else {
+            System.out.println("Burcunuz : " + burc);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
