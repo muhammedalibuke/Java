@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class artikyears {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int kalan, kalan1, yil;
+
+
+        System.out.println("Yıl Giriniz : ");
+        yil = inp.nextInt();
+
+        if (yil < 0) {
+            System.out.println("Verileri Hatalı girdiniz.");
+            return;
+
+        }
+
+        kalan = yil % 4;
+        kalan1 = yil% 400;
+        
+        if (kalan == 0 && kalan1 == 0) {
+            System.out.println(yil + " bir atık yıldır");
+
+        }else System.out.println(yil + " bir atık yıl değildir.! ");
+
+
+
+
+
+
+    }
+}
+
+
