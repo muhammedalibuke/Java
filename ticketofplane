@@ -1,0 +1,52 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class itcketofplane {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        inp.useLocale(Locale.ENGLISH);
+
+        int km, yas, yolculuktipi;
+        double normaltutar;
+
+        System.out.println("Mesafeyi km türünden giriniz :");
+        km = inp.nextInt();
+
+        System.out.println("Yaşınızı giriniz :");
+        yas = inp.nextInt();
+
+        System.out.println("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ):");
+        yolculuktipi = inp.nextInt();
+
+        normaltutar = km*0.1 ;
+
+        if (km <= 0 || yas <= 0 || (yolculuktipi != 1 && yolculuktipi != 2)) {
+            System.out.println("Girdiğiniz veriler yanlıştır, tekrar deneyiniz!");
+            return;
+        }
+
+        if (yas<12){
+            normaltutar*=0.5;
+        }
+
+        else if (yas >=12 && yas<=24) {
+            normaltutar*=0.9;
+        }
+
+        else if (yas>65){
+            normaltutar*=0.7;
+        }
+
+        if (yolculuktipi == 1) {
+            normaltutar = normaltutar;
+
+            } else if ((yolculuktipi == 2)){
+            normaltutar*=0.8;
+            normaltutar*=2;
+
+
+
+            System.out.println("Tutar: "+ normaltutar );
+
+        }
+    }
+}
