@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class chinazodyac {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int dogumtarihi, kalan;
+        String burc = "";
+
+        System.out.println("Doğum Tarihinizi giriniz : ");
+        dogumtarihi = inp.nextInt();
+
+        if ( dogumtarihi < 0) {
+            System.out.println("Girdiğiniz veriler yanlıştır, tekrar deneyiniz!");
+            return;
+        }
+
+        kalan = dogumtarihi%12 ;
+
+        if (kalan == 0 ) {
+            burc = "Maymun";
+        }
+
+        if (kalan == 1 ) {
+            burc = "Horoz";
+        }
+
+        if (kalan == 2 ) {
+            burc = "Köpek";
+        }
+
+        if (kalan == 3 ) {
+            burc = "Domuz";
+        }
+
+        if (kalan == 4 ) {
+            burc = "Fare";
+        }
+
+        if (kalan == 5 ) {
+            burc = "Öküz";
+        }
+
+        if (kalan == 6 ) {
+            burc = "Kaplan";
+        }
+
+        if (kalan == 7 ) {
+            burc = "Tavşan";
+        }
+
+        if (kalan == 8 ) {
+            burc = "Ejderha";
+        }
+
+        if (kalan == 9 ) {
+            burc = "Yılan";
+        }
+
+        if (kalan == 10 ) {
+            burc = "At";
+        }
+
+        if (kalan == 11 ) {
+            burc = "Koyun";
+        }
+
+
+    System.out.println("Çin Zodyağı Burcunuz : " + burc);
+    }
+}
