@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class calculateus {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int k , m;
+        int total = 1 ;
+
+        System.out.println("Hesaplanacak sayinini giriniz: ");
+        k = inp.nextInt();
+        System.out.println("Hesaplanacak sayıyın üssünü giriniz : ");
+        m = inp.nextInt();
+
+        for (int i = 1 ; i<=m; i++ ){
+            total *= k ;
+
+        }
+        System.out.println("Cevabınız:" + total);
+    }
+}
