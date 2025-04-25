@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class combinationofwithfactoriel {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int k ,m ;
+        int total = 1;
+        int total1 = 1;
+        int total2 = 1;
+        System.out.println("Kombinasyonlu N değeri için sayinizi giriniz: ");
+        k = scan.nextInt();
+        System.out.println("Kombinasyonlu r değeri için sayinizi giriniz: ");
+        m = scan.nextInt();
+
+        for (int i = 1 ; i<=k; i++){
+            total = total * i;
+        }
+        for (int i = 1 ; i<=m; i++ ){
+            total1 = total1 * i;
+        }
+        for (int i = 1; i <= (k - m); i++) {
+            total2 *= i;
+        }
+
+            int combination = total / (total1 * total2);
+            System.out.println("C(" + k + "," + m + ") = " + combination);
+
+
+        }
+    }
+
