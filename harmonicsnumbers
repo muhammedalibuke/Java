@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class harmonicnumbers {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int n  ;
+        double total = 0.0 ;
+
+        System.out.println("sayınızın harmonik sayısını hesaplamak için sayi girinizi : ");
+        n = inp.nextInt();
+
+        for (int i = 1 ; i<=n ; i++){
+            total += (1.0/i);
+
+        }
+        System.out.println(total);
+    }
+}
