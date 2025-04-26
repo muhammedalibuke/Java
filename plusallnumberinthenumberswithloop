@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class armstrongnumberstoughalgorithm {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        //we have to learn what is the number of in the number for plus
+        int number;
+        int result = 0;
+        int basValues;
+
+        System.out.println("Sayınızın numaraları hesaplamak için sayınızı giriniz : ");
+        number = inp.nextInt();
+
+
+        // number % 10 son basamağı bulur
+        // number /= 10 son basamağı silip yeni basamağa geçilir.
+
+        while (number != 0) {
+            basValues = number % 10;
+
+            result += basValues;
+            number /=10 ; // number = number / 10
+
+            }
+            System.out.println(result);
+        }
+    }
+
+
