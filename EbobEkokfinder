@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class ebobekokwithwhile {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        int n1, n2;
+        int i = 1;
+        int k = 1;
+
+
+
+        System.out.println("n1 sayısını giriniz : ");
+        n1 = inp.nextInt();
+        System.out.println("n2 sayısını giriniz : ");
+        n2 = inp.nextInt();
+
+        if (n2>n1){
+            int temp = n1;
+            n1 = n2;
+            n2 = temp;
+        }
+
+        int m =  (n1*n2);
+
+        //EBOB
+        while (i <= n1 && i<=n2) {
+            if (n1 % i == 0 && n2 % i == 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+        System.out.println("===============");
+
+        //EKOK
+        while (k <= m) {
+            if (k % n1 == 0 && k % n2 == 0) {
+                System.out.println(k);
+
+                break;
+            }
+            k++;
+        }
+    }
+}
+
