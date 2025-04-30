@@ -1,0 +1,71 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.Scanner ;
+public class AtmProject {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        String username , password ;
+        int balance = 1500;
+        int right = 4 ;
+        int select ;
+        int price ;
+
+
+        for (int i = 1 ; i<=right ; i++){
+
+            System.out.println("Kullanıcı Adınız :");
+            username = inp.nextLine();
+            System.out.println("Şifreniz : ");
+            password = inp.nextLine();
+
+            if (username.equals("patika") && password.equals("patika123")){
+                System.out.println("Mehaba Banka sistemine hoşgeldiniz.");
+
+            do {
+                System.out.println("Yapmak istediğiniz işlemler şunlardır; \n" + "1 - Para Yatırma \n" + "2 - Para Çekme \n" +
+                                   "3 - Bakiye Sorgulama \n"  + "4 - Çıkış yap ") ;
+
+
+                System.out.println("yapmak istediğiniz işlemi seçiniz ");
+                select = inp.nextInt();
+
+                switch (select) {
+
+                    case 1 :
+                        System.out.println("Yatırılacak Tutarı giriniz : ");
+                        price = inp.nextInt();
+                        balance += price ;
+                        break;
+
+                    case 2:
+
+                        System.out.println("Para Miktari :  " + balance );
+                        System.out.println("Çekilecek Tutarı giriniz : ");
+                        price = inp.nextInt();
+                        if( price  > balance ){
+                            System.out.println("Bakiyeniz yetersiz. ");
+                        }else {
+                            balance -= price ;
+                        }
+                        break;
+
+                    case 3  :
+                        System.out.println("Bakiyeniz : " + balance);
+                    break ;
+                    }
+                }   while (select !=4);
+                System.out.println("Tekrar Görüşmek üzere");
+                break ;
+            }
+            right-- ;
+            System.out.println("Hatalı kullanıcı adı ve şifre .Tekrar dene .");
+
+            if (right == 0 ){
+                System.out.println("Hesabınız bloke olmuştur.Bankayka iletişim kurun.");
+            }else {
+                System.out.println("Kalan hakkınız : " + right ) ;
+            }
+
+
+        }
+    }
+}
