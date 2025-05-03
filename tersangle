@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class tersucgen {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int basamaksayisi;
+        System.out.println("Kaç basamaklı ters üçgen istiyorsunuz : ");
+        basamaksayisi = inp.nextInt();
+
+        for (int i = basamaksayisi; i>=1 ;  i--) {
+            int yildizsayisi = i*2 -1 ;
+
+            for (int k = 1; yildizsayisi>= k; k++) {
+
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+
+    }
+}
+
