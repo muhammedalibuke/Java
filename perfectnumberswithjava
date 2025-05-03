@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class perfectnumberswithjava {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int perfectnumber,ebobsayilar,toplam = 0,deger = 0 ;
+        System.out.println("Mükemmel sayı mı girdiğiniz : ");
+        perfectnumber = inp.nextInt();
+
+        for (int i = 1 ; i<=perfectnumber ; i++){
+
+            if (perfectnumber % i == 0 ){
+
+                toplam = toplam + i ;
+            }
+
+            deger = toplam - perfectnumber ;
+        }
+
+        if (perfectnumber == deger ){
+            System.out.println(perfectnumber + "girdiğiniz sayı mükemmel sayıdır : " );
+        }
+        if (perfectnumber != deger ) {
+            System.out.println(perfectnumber + "Girdiğiniz sayı mükemmel sayı değildir :");
+        }
+
+    }
+}
