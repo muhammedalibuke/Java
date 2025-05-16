@@ -1,0 +1,26 @@
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.Scanner;
+public class v3e4bolunensayilar {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner (System.in);
+
+        int sayi,toplam = 0  , sayac =0;
+
+
+        System.out.println("0'a kadar olan sayıların 3 ve 4 bölünenlerini bulannların ortalaması için sayı ;");
+        sayi = inp.nextInt();
+
+        if (sayi < 0 ){
+            return  ;
+        }
+
+        for ( int x = 0 ; x < sayi ; x++) {
+                if (x % 3 == 0 && x % 4 == 0) {
+                    toplam = toplam + x ;
+                    sayac++ ;
+                }
+            }
+        System.out.println(toplam);
+        }
+    }
+
