@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class FibonacciSerisi {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int fibonacciserisi ;
+        int lastnumbers = 0 ;
+        int newnumbers = 1 ;
+        int newnewnumbers;
+        System.out.println("Kaç basamaklı fibonacci sayısı istiyorsunuz : ");
+        fibonacciserisi= inp.nextInt();
+
+        for (int i = 1 ; i<= fibonacciserisi ; i++ ){
+
+                newnewnumbers = lastnumbers+newnumbers;
+                lastnumbers = newnumbers;
+                newnumbers = newnewnumbers ;
+
+            System.out.println(lastnumbers + "+ " +newnumbers +"=" +newnewnumbers);
+        }
+    }
+}
