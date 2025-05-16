@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class likeadiaomandwithstars {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int kactane;
+
+        System.out.println("Kaç Basamaklı Diamond şekli istiyorsunuz : ");
+        kactane = inp.nextInt();
+
+
+        for (int x = kactane; x >= 1; x -= 2) {
+            for (int y = 0; y < (kactane - x) / 2; y++) {
+                System.out.print(" ");
+            }
+            for (int m = 0; m < x; m++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
